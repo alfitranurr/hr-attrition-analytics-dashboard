@@ -14,7 +14,6 @@
   - [🛠 Tech Stack](#-tech-stack)
   - [🗂 Dataset](#-dataset)
   - [🔄 Workflow / Metodologi](#-workflow--metodologi)
-  - [🧭 Diagram Alur](#-diagram-alur)
   - [🖥 Struktur Dashboard](#-struktur-dashboard)
   - [📈 Hasil \& Insight Utama](#-hasil--insight-utama)
   - [✅ Kesimpulan](#-kesimpulan)
@@ -88,18 +87,18 @@ Total data yang dianalisis: **37 karyawan**, dengan **18 kasus attrition (48,65%
 
 ---
 
-## 🧭 Diagram Alur
-
 ```mermaid
-flowchart TD
-    A[Raw HR Data<br/>Excel/CSV] --> B[Data Cleaning & Preparation]
-    B --> C[Exploratory Data Analysis]
-    C --> D[Desain Layout Dashboard]
-    D --> E[Membangun Visualisasi per Sheet]
-    E --> F[Menambahkan Filter & Parameter Interaktif]
-    F --> G[Validasi Konsistensi Data Antar Chart]
-    G --> H[Dashboard HR Analytics Final]
-    H --> I[Insight & Rekomendasi Bisnis untuk Tim HR]
+flowchart LR
+
+A([Raw HR Data]) --> B[Data Cleaning & Preparation]
+B --> C[Exploratory Data Analysis]
+C --> D[Define KPI & Business Metrics]
+D --> E[Dashboard Design]
+E --> F[Develop Visualizations]
+F --> G[Interactive Filters & Parameters]
+G --> H[Data Validation & Testing]
+H --> I([HR Analytics Dashboard])
+I --> J([Business Insights & Recommendations])
 ```
 
 ---
