@@ -1,14 +1,14 @@
 # 📊 HR Attrition Intelligence Dashboard — Tableau Analytics Project
 
-**Dashboard interaktif untuk menganalisis tingkat *attrition* (turnover) karyawan, mengidentifikasi faktor pemicu utama, serta memberikan rekomendasi strategis berbasis data bagi divisi Human Capital / HR.**
-
 ![Overview HR Analytics Dashboard](./Overview%20HR%20Analytis%20Dashboard.png)
+
+📂 **Live Dashboard File (Tableau Workbook via Google Drive):** [Buka Dashboard](https://drive.google.com/file/d/1cvnXotn8kToo_7JJ5LJUTDRNC8lfoeNy/view?usp=sharing)
 
 ---
 
 ## 📌 Daftar Isi
 - [📊 HR Attrition Intelligence Dashboard — Tableau Analytics Project](#-hr-attrition-intelligence-dashboard--tableau-analytics-project)
-  - [� Daftar Isi](#-daftar-isi)
+  - [📌 Daftar Isi](#-daftar-isi)
   - [🏢 Latar Belakang](#-latar-belakang)
   - [🎯 Tujuan Proyek](#-tujuan-proyek)
   - [🛠 Tech Stack](#-tech-stack)
@@ -19,6 +19,7 @@
   - [📈 Hasil \& Insight Utama](#-hasil--insight-utama)
   - [✅ Kesimpulan](#-kesimpulan)
   - [💡 Rekomendasi](#-rekomendasi)
+  - [📁 Struktur Repository](#-struktur-repository)
   - [🚀 Cara Mengakses / Menjalankan](#-cara-mengakses--menjalankan)
   - [👤 Kontak](#-kontak)
 
@@ -70,6 +71,8 @@ Dataset berisi data historis karyawan dengan atribut utama sebagai berikut:
 - Job Satisfaction Score (skala 1–4)
 
 Total data yang dianalisis: **37 karyawan**, dengan **18 kasus attrition (48,65%)**.
+
+📄 Dataset mentah tersedia pada file **`HR Data.xlsx`** di repository ini.
 
 ---
 
@@ -145,26 +148,57 @@ Dashboard ini berhasil mengubah data HR mentah menjadi **narasi bisnis yang jela
 
 ---
 
+## 📁 Struktur Repository
+
+```
+hr-attrition-analytics-dashboard/
+│
+├── HR Data.xlsx                          # Dataset mentah karyawan (sumber data)
+├── Overview HR Analytis Dashboard.png    # Screenshot preview dashboard
+└── README.md                             # Dokumentasi proyek
+```
+
+> 💡 File workbook Tableau (`.twbx`) dapat diakses melalui link Google Drive pada bagian atas README ini, karena ukurannya melebihi batas nyaman untuk disimpan langsung di GitHub.
+
+---
+
 ## 🚀 Cara Mengakses / Menjalankan
 
-1. Clone repository ini:
+1. **Lihat dashboard langsung (tanpa install apapun):**
+   Buka link Google Drive berikut → [Overview HR Attrition Dashboard.twbx](https://drive.google.com/file/d/1cvnXotn8kToo_7JJ5LJUTDRNC8lfoeNy/view?usp=sharing)
+
+2. **Jalankan secara interaktif via Tableau:**
    ```bash
-   git clone https://github.com/alfitranurr/hr-attrition-dashboard.git
+   git clone https://github.com/alfitranurr/hr-attrition-analytics-dashboard.git
    ```
-2. Buka file `.twbx` menggunakan **Tableau Desktop** atau **Tableau Reader**.
+   Lalu buka file workbook menggunakan **Tableau Desktop** atau **Tableau Reader**.
+
 3. Gunakan filter **Education** di pojok kanan atas serta klik langsung pada chart (misalnya kelompok usia) untuk eksplorasi interaktif.
-4. Untuk melihat preview tanpa install Tableau, lihat gambar `Overview HR Analytis Dashboard.png` pada repository ini.
+
+4. Untuk melihat preview cepat tanpa membuka Tableau, lihat gambar `Overview HR Analytis Dashboard.png` pada repository ini.
 
 ---
 
 ## 👤 Kontak
 
+<table>
+<tr>
+<td width="90">
+<img src="https://api.dicebear.com/7.x/initials/svg?seed=Al%20Fitra" width="70" height="70" style="border-radius:50%;" alt="Al Fitra Nur R."/>
+</td>
+<td>
+
 **Al Fitra Nur R.**
-Informatics Graduate — Universitas Muhammadiyah Malang (Cumlaude, Best Graduate)
+Informatics Graduate — Universitas Muhammadiyah Malang *(Cumlaude, Best Graduate)*
 Fokus: Data Analytics · Business Intelligence · AI Automation
 
-- 🌐 Portfolio: [alfitranurr.vercel.app](https://alfitranurr.vercel.app)
-- 💻 GitHub: [github.com/alfitranurr](https://github.com/alfitranurr)
+🌐 Portfolio &nbsp;: [alfitranurr.vercel.app](https://alfitranurr.vercel.app)
+💻 GitHub &nbsp;&nbsp;&nbsp;: [github.com/alfitranurr](https://github.com/alfitranurr)
+📂 Dashboard : [Lihat via Google Drive](https://drive.google.com/file/d/1cvnXotn8kToo_7JJ5LJUTDRNC8lfoeNy/view?usp=sharing)
+
+</td>
+</tr>
+</table>
 
 ---
 <sub>© 2026 Al Fitra Nur R. — Dibuat untuk portofolio Data Analyst / HR Analytics.</sub>
