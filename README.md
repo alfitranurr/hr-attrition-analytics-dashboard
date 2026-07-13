@@ -23,6 +23,7 @@
     - [Prasyarat](#prasyarat)
     - [Opsi 1 — Download Workbook](#opsi-1--download-workbook)
     - [Opsi 2 — Clone Repository](#opsi-2--clone-repository)
+    - [Menggunakan Dataset HR](#menggunakan-dataset-hr)
     - [Cara Menggunakan Dashboard](#cara-menggunakan-dashboard)
     - [Preview Dashboard](#preview-dashboard)
   - [👤 Kontak](#-kontak)
@@ -182,6 +183,7 @@ Pastikan Anda telah menginstal salah satu aplikasi berikut:
 1. Unduh file **Overview HR Attrition Dashboard.twbx** melalui Google Drive:
 
    > https://drive.google.com/file/d/1cvnXotn8kToo_7JJ5LJUTDRNC8lfoeNy/view?usp=sharing
+
 2. Buka file tersebut menggunakan **Tableau Desktop** atau **Tableau Reader**.
 
 ---
@@ -198,17 +200,27 @@ Kemudian buka file **Overview HR Attrition Dashboard.twbx** menggunakan **Tablea
 
 ---
 
+### Menggunakan Dataset HR
+
+Repository ini telah menyediakan dataset **HR Data.xlsx** yang digunakan sebagai sumber data dashboard.
+
+* Saat membuka file **Overview HR Attrition Dashboard.twbx**, Tableau akan secara otomatis menggunakan dataset tersebut apabila berada pada lokasi yang sama dengan workbook.
+* Jika Tableau meminta untuk memperbarui lokasi data (*Locate Data Source*), arahkan ke file **HR Data.xlsx** yang tersedia di dalam repository.
+
+---
+
 ### Cara Menggunakan Dashboard
 
 * Gunakan filter **Education** di pojok kanan atas untuk memfilter data.
-* Klik pada visualisasi seperti **Age Group**, **Department**, atau **Job Role** untuk melakukan eksplorasi interaktif (cross-filtering).
-* Arahkan kursor ke setiap chart untuk melihat informasi detail (tooltip).
+* Klik pada visualisasi seperti **Age Group**, **Department**, atau **Job Role** untuk melakukan eksplorasi interaktif (*cross-filtering*).
+* Arahkan kursor ke setiap chart untuk melihat informasi detail (*tooltip*).
 
 ---
 
 ### Preview Dashboard
 
 Apabila Anda belum memiliki Tableau Desktop atau Tableau Reader, Anda tetap dapat melihat tampilan dashboard melalui file **Overview HR Analytics Dashboard.png** yang tersedia pada repository ini.
+
 
 
 ---
