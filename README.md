@@ -19,7 +19,12 @@
   - [✅ Kesimpulan](#-kesimpulan)
   - [💡 Rekomendasi](#-rekomendasi)
   - [📁 Struktur Repository](#-struktur-repository)
-  - [🚀 Cara Mengakses / Menjalankan](#-cara-mengakses--menjalankan)
+  - [🚀 Cara Menjalankan Dashboard](#-cara-menjalankan-dashboard)
+    - [Prasyarat](#prasyarat)
+    - [Opsi 1 — Download Workbook](#opsi-1--download-workbook)
+    - [Opsi 2 — Clone Repository](#opsi-2--clone-repository)
+    - [Cara Menggunakan Dashboard](#cara-menggunakan-dashboard)
+    - [Preview Dashboard](#preview-dashboard)
   - [👤 Kontak](#-kontak)
 
 ---
@@ -161,20 +166,50 @@ hr-attrition-analytics-dashboard/
 
 ---
 
-## 🚀 Cara Mengakses / Menjalankan
+## 🚀 Cara Menjalankan Dashboard
 
-1. **Lihat dashboard langsung (tanpa install apapun):**
-   Buka link Google Drive berikut → [Overview HR Attrition Dashboard.twbx](https://drive.google.com/file/d/1cvnXotn8kToo_7JJ5LJUTDRNC8lfoeNy/view?usp=sharing)
+### Prasyarat
 
-2. **Jalankan secara interaktif via Tableau:**
-   ```bash
-   git clone https://github.com/alfitranurr/hr-attrition-analytics-dashboard.git
-   ```
-   Lalu buka file workbook menggunakan **Tableau Desktop** atau **Tableau Reader**.
+Pastikan Anda telah menginstal salah satu aplikasi berikut:
 
-3. Gunakan filter **Education** di pojok kanan atas serta klik langsung pada chart (misalnya kelompok usia) untuk eksplorasi interaktif.
+* Tableau Desktop
+* Tableau Reader
 
-4. Untuk melihat preview cepat tanpa membuka Tableau, lihat gambar `Overview HR Analytis Dashboard.png` pada repository ini.
+---
+
+### Opsi 1 — Download Workbook
+
+1. Unduh file **Overview HR Attrition Dashboard.twbx** melalui Google Drive:
+
+   > https://drive.google.com/file/d/1cvnXotn8kToo_7JJ5LJUTDRNC8lfoeNy/view?usp=sharing
+2. Buka file tersebut menggunakan **Tableau Desktop** atau **Tableau Reader**.
+
+---
+
+### Opsi 2 — Clone Repository
+
+Clone repository ini ke komputer Anda:
+
+```bash
+git clone https://github.com/alfitranurr/hr-attrition-analytics-dashboard.git
+```
+
+Kemudian buka file **Overview HR Attrition Dashboard.twbx** menggunakan **Tableau Desktop** atau **Tableau Reader**.
+
+---
+
+### Cara Menggunakan Dashboard
+
+* Gunakan filter **Education** di pojok kanan atas untuk memfilter data.
+* Klik pada visualisasi seperti **Age Group**, **Department**, atau **Job Role** untuk melakukan eksplorasi interaktif (cross-filtering).
+* Arahkan kursor ke setiap chart untuk melihat informasi detail (tooltip).
+
+---
+
+### Preview Dashboard
+
+Apabila Anda belum memiliki Tableau Desktop atau Tableau Reader, Anda tetap dapat melihat tampilan dashboard melalui file **Overview HR Analytics Dashboard.png** yang tersedia pada repository ini.
+
 
 ---
 
