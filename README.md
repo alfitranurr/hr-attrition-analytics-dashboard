@@ -6,16 +6,9 @@
 
 ---
 
-## 📝 Short Description (untuk repo description GitHub)
-
-> Interactive HR Analytics Dashboard built with Tableau to analyze employee attrition patterns across department, age group, education field, job role, and gender — turning raw HR data into actionable retention strategy.
-
----
-
 ## 📌 Daftar Isi
 - [📊 HR Attrition Intelligence Dashboard — Tableau Analytics Project](#-hr-attrition-intelligence-dashboard--tableau-analytics-project)
-  - [📝 Short Description (untuk repo description GitHub)](#-short-description-untuk-repo-description-github)
-  - [📌 Daftar Isi](#-daftar-isi)
+  - [� Daftar Isi](#-daftar-isi)
   - [🏢 Latar Belakang](#-latar-belakang)
   - [🎯 Tujuan Proyek](#-tujuan-proyek)
   - [🛠 Tech Stack](#-tech-stack)
