@@ -2,7 +2,7 @@
 
 ![Overview HR Analytics Dashboard](./Overview%20HR%20Analytis%20Dashboard.png)
 
-📂 **Live Dashboard File (Tableau Workbook via Google Drive):** [Buka Dashboard](https://drive.google.com/file/d/1cvnXotn8kToo_7JJ5LJUTDRNC8lfoeNy/view?usp=sharing)
+📂 **Download Dashboard File (Tableau Workbook via Google Drive):** [Buka Dashboard](https://drive.google.com/file/d/1cvnXotn8kToo_7JJ5LJUTDRNC8lfoeNy/view?usp=sharing)
 
 ---
 
