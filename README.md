@@ -1,6 +1,6 @@
 # 📊 HR Attrition Intelligence Dashboard — Tableau Analytics Project
 
-![Overview HR Analytics Dashboard](./Overview%20HR%20Analytics%20Dashboard.png)
+![Overview HR Analytics Dashboard](./Overview%20HR%20Analytis%20Dashboard.png)
 
 📂 **Download Dashboard File (Tableau Workbook via Google Drive):** [Buka Dashboard](https://drive.google.com/file/d/1cvnXotn8kToo_7JJ5LJUTDRNC8lfoeNy/view?usp=sharing)
 
@@ -165,7 +165,7 @@ Dashboard ini berhasil mengubah data HR mentah menjadi **narasi bisnis yang jela
 hr-attrition-analytics-dashboard/
 │
 ├── HR Data.xlsx                          # Dataset mentah karyawan (sumber data)
-├── Overview HR Analytics Dashboard.png   # Screenshot preview dashboard
+├── Overview HR Analytis Dashboard.png    # Screenshot preview dashboard
 └── README.md                             # Dokumentasi proyek
 ```
 
@@ -226,7 +226,7 @@ Repository ini telah menyediakan dataset **HR Data.xlsx** yang digunakan sebagai
 
 ### Preview Dashboard
 
-Apabila Anda belum memiliki Tableau Desktop atau Tableau Reader, Anda tetap dapat melihat tampilan dashboard melalui file **Overview HR Analytics Dashboard.png** yang tersedia pada repository ini.
+Apabila Anda belum memiliki Tableau Desktop atau Tableau Reader, Anda tetap dapat melihat tampilan dashboard melalui file **Overview HR Analytis Dashboard.png** yang tersedia pada repository ini.
 
 ---
 
