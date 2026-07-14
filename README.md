@@ -1,6 +1,6 @@
 # 📊 HR Attrition Intelligence Dashboard — Tableau Analytics Project
 
-![Overview HR Analytics Dashboard](./Overview%20HR%20Analytis%20Dashboard.png)
+![Overview HR Analytics Dashboard](./Overview%20HR%20Analytics%20Dashboard.png)
 
 📂 **Download Dashboard File (Tableau Workbook via Google Drive):** [Buka Dashboard](https://drive.google.com/file/d/1cvnXotn8kToo_7JJ5LJUTDRNC8lfoeNy/view?usp=sharing)
 
@@ -47,10 +47,10 @@ Dashboard ini dirancang agar dapat digunakan oleh tim HR/HC untuk melakukan **mo
 
 ## 🎯 Tujuan Proyek
 
-- Memvisualisasikan **tingkat attrition** secara keseluruhan dan per segmen (departemen, usia, gender, pendidikan)
-- Mengidentifikasi **job role** dengan tingkat kepuasan kerja terendah yang berpotensi menjadi *early warning* attrition
+- Memvisualisasikan **tingkat attrition** secara keseluruhan dan per segmen (departemen, kelompok usia, gender, latar belakang pendidikan)
+- Mengidentifikasi **job role** dengan sebaran kepuasan kerja terendah yang berpotensi menjadi *early warning* attrition
 - Menyediakan **KPI ringkas** (Employee Count, Attrition Count, Attrition Rate, Active Employees, Avg. Age) sebagai *executive summary*
-- Membantu tim HR menyusun **strategi retensi yang lebih tepat sasaran**
+- Membantu tim HR menyusun **strategi retensi yang lebih tepat sasaran** berdasarkan segmen berisiko tinggi
 
 ---
 
@@ -75,7 +75,7 @@ Dataset berisi data historis karyawan dengan atribut utama sebagai berikut:
 - Attrition Status (Yes/No)
 - Job Satisfaction Score (skala 1–4)
 
-Total data yang dianalisis: **37 karyawan**, dengan **18 kasus attrition (48,65%)**.
+Total data yang dianalisis: **1.470 karyawan**, dengan **237 kasus attrition (16,12%)**.
 
 📄 Dataset mentah tersedia pada file **`HR Data.xlsx`** di repository ini.
 
@@ -113,43 +113,49 @@ I --> J([Business Insights & Recommendations])
 
 Dashboard terdiri dari 6 komponen visual utama dalam satu halaman:
 
-| Komponen                                                                                      | Fungsi                                                                     |
-| --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| **KPI Summary** (Employee Count, Attrition Count, Attrition Rate, Active Employees, Avg. Age) | Ringkasan metrik utama secara real-time                                    |
-| **Attrition by Gender**                                                                       | Menunjukkan distribusi attrition berdasarkan gender                        |
-| **Department Wise Attrition** (Pie Chart)                                                     | Perbandingan attrition antar departemen (R&D vs Sales)                     |
-| **No. of Employee by Age Group** (Histogram dengan Bin Size dinamis)                          | Sebaran jumlah karyawan berdasarkan kelompok usia                          |
-| **Job Satisfaction Rating** (Highlight Table)                                                 | Skor kepuasan kerja (1–4) untuk tiap job role                              |
-| **Education Field Wise Attrition** (Bar Chart)                                                | Attrition berdasarkan latar belakang pendidikan                            |
-| **Attrition Rate by Gender for Different Age Group** (Donut Chart interaktif)                 | Proporsi attrition per kelompok usia & gender, dengan filter klik langsung |
+| Komponen                                                                                                                | Fungsi                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **KPI Summary** (Employee Count 1.470, Attrition Count 237, Attrition Rate 16,12%, Active Employees 1.233, Avg. Age 37) | Ringkasan metrik utama secara real-time                                    |
+| **Attrition by Gender** (Female 87, Male 150)                                                                           | Menunjukkan distribusi attrition berdasarkan gender                        |
+| **Department Wise Attrition** (Pie Chart: HR 12, R&D 133, Sales 92)                                                     | Perbandingan jumlah attrition antar departemen                             |
+| **No. of Employee by Age Group** (Histogram dengan Bin Size dinamis, interval 4 tahun)                                  | Sebaran jumlah karyawan berdasarkan kelompok usia                          |
+| **Job Satisfaction Rating** (Highlight Table, skala 1–4 per Job Role)                                                   | Sebaran skor kepuasan kerja untuk tiap job role                            |
+| **Education Field Wise Attrition** (Bar Chart)                                                                          | Attrition berdasarkan latar belakang pendidikan                            |
+| **Attrition Rate by Gender for Different Age Group** (Donut Chart interaktif)                                           | Proporsi attrition per kelompok usia & gender, dengan filter klik langsung |
 
 ---
 
 ## 📈 Hasil & Insight Utama
 
-1. **Attrition Rate sangat tinggi: 48,65%** — dari total 37 karyawan, 18 di antaranya mengalami attrition. Angka ini jauh di atas rata-rata industri (umumnya 10–15%), menandakan adanya masalah retensi yang serius.
-2. **Departemen Sales mendominasi attrition** — 10 dari 18 kasus attrition (55,56%) berasal dari departemen Sales, sementara R&D menyumbang 8 kasus (44,44%).
-3. **Attrition didominasi oleh karyawan usia muda** — mayoritas karyawan berada pada kelompok usia bin 20-an (18 dari 37 karyawan), dan kelompok usia 25–34 tahun menunjukkan proporsi attrition tertinggi dibanding kelompok usia lain.
-4. **Latar belakang pendidikan Life Sciences paling banyak terdampak** — 8 dari 18 kasus attrition berasal dari bidang Life Sciences, diikuti Medical (5) dan Technical Degree (3).
-5. **Job Satisfaction bervariasi antar job role** — role seperti *Manufacturing Director* dan *Sales Executive* cenderung terkonsentrasi pada skor kepuasan menengah (level 2), sementara *Laboratory Technician*, *Research Scientist*, dan *Sales Representative* memiliki sebaran skor yang lebih merata, mengindikasikan pengalaman kerja yang tidak konsisten antar individu dalam role yang sama.
-6. **Gender turut menjadi faktor pembeda** — pola attrition menunjukkan perbedaan signifikan antara gender dalam beberapa kelompok usia, yang perlu ditelusuri lebih lanjut untuk memastikan tidak ada isu kesetaraan/lingkungan kerja yang mendasarinya.
+1. **Attrition Rate berada di 16,12%** — dari total 1.470 karyawan, 237 di antaranya mengalami attrition, dengan 1.233 karyawan masih aktif. Angka ini berada sedikit di atas rata-rata industri yang umumnya berkisar 10–15%, sehingga tetap perlu perhatian meskipun tidak dalam kategori kritis.
+
+2. **Departemen R&D menyumbang jumlah attrition terbesar** — 133 dari 237 kasus (56,12%) berasal dari R&D, diikuti Sales sebanyak 92 kasus (38,82%), dan HR hanya 12 kasus (5,06%). Karena R&D umumnya juga memiliki headcount terbesar, angka ini perlu dibaca sebagai *jumlah kasus*, bukan otomatis *tingkat attrition tertinggi per departemen*.
+
+3. **Attrition terkonsentrasi pada karyawan usia 25–34 tahun** — kelompok usia ini menyumbang 112 dari 237 kasus attrition (±47,3%), jauh di atas kelompok usia lain: Under 25 (38 kasus), 35–44 (51 kasus), 45–54 (25 kasus), dan Over 55 (11 kasus). Pada kelompok 25–34, attrition pada karyawan **pria (69 kasus)** jauh lebih tinggi dibanding **wanita (43 kasus)**.
+
+4. **Gender: pria mendominasi total attrition** — dari 237 kasus, 150 (63,3%) adalah karyawan pria dan 87 (36,7%) adalah karyawan wanita. Pola ini konsisten di hampir semua kelompok usia, dengan gap terbesar terjadi pada kelompok usia 25–34 dan 35–44 tahun.
+
+5. **Latar belakang pendidikan Life Sciences paling banyak terdampak** — 89 dari 237 kasus attrition (37,6%) berasal dari bidang Life Sciences, diikuti Medical (63 kasus / 26,6%), Marketing (35), Technical Degree (32), Other (11), dan Human Resources (7).
+
+6. **Job Satisfaction bervariasi antar job role** — *Sales Executive* memiliki jumlah karyawan dengan skor kepuasan terendah (level 1) paling banyak, yaitu 69 dari 326 karyawan (±21,2%), diikuti *Laboratory Technician* dengan 56 dari 259 karyawan (±21,6%) di level 1. Sebaliknya, role seperti *Research Scientist* dan *Healthcare Representative* menunjukkan proporsi karyawan dengan skor kepuasan tinggi (level 3–4) yang lebih dominan, mengindikasikan pengalaman kerja yang secara umum lebih positif pada role tersebut.
 
 ---
 
 ## ✅ Kesimpulan
 
-Dashboard ini berhasil mengubah data HR mentah menjadi **narasi bisnis yang jelas dan actionable**. Temuan utama menunjukkan bahwa attrition di perusahaan ini **tidak terjadi secara acak**, melainkan terkonsentrasi pada segmen tertentu: departemen Sales, karyawan usia muda (di bawah 35 tahun), dan latar belakang pendidikan Life Sciences/Medical. Tingginya attrition rate (48,65%) mengindikasikan perlunya intervensi HR yang lebih terarah, bukan pendekatan retensi yang bersifat umum/generik.
+Dashboard ini berhasil mengubah data HR mentah menjadi **narasi bisnis yang jelas dan actionable**. Dengan attrition rate 16,12% dari total 1.470 karyawan, temuan utama menunjukkan bahwa attrition **tidak terjadi secara acak**, melainkan terkonsentrasi pada segmen tertentu: departemen R&D dan Sales, karyawan usia 25–34 tahun, karyawan pria, serta karyawan dengan latar belakang pendidikan Life Sciences/Medical. Job role seperti *Sales Executive* dan *Laboratory Technician* juga menunjukkan proporsi kepuasan kerja rendah yang relatif lebih tinggi dibanding role lain. Temuan ini mengindikasikan perlunya intervensi HR yang lebih terarah pada segmen berisiko, bukan pendekatan retensi yang bersifat umum/generik.
 
 ---
 
 ## 💡 Rekomendasi
 
-1. **Fokus intervensi retensi pada departemen Sales**, misalnya melalui evaluasi beban kerja, struktur insentif, dan jenjang karier yang lebih jelas.
-2. **Rancang program engagement khusus untuk karyawan usia 25–34 tahun**, seperti mentoring, career pathing, atau fleksibilitas kerja, karena kelompok ini paling rentan resign.
-3. **Lakukan *stay interview*/survei kepuasan lanjutan** pada job role dengan sebaran job satisfaction rendah untuk menggali akar masalah spesifik (bukan hanya gejala).
+1. **Fokus intervensi retensi pada departemen R&D dan Sales**, misalnya melalui evaluasi beban kerja, struktur insentif, jenjang karier, dan lingkungan kerja tim.
+2. **Rancang program engagement khusus untuk karyawan usia 25–34 tahun**, seperti mentoring, career pathing, atau fleksibilitas kerja, karena kelompok ini paling rentan resign — terutama pada karyawan pria di rentang usia tersebut.
+3. **Lakukan *stay interview*/survei kepuasan lanjutan** khususnya pada role *Sales Executive* dan *Laboratory Technician* untuk menggali akar masalah spesifik di balik rendahnya skor kepuasan kerja.
 4. **Evaluasi proses rekrutmen untuk kandidat dari bidang Life Sciences/Medical**, guna memastikan kesesuaian ekspektasi peran sejak tahap seleksi (person-job fit).
-5. **Bangun sistem monitoring attrition berkelanjutan** (dashboard live/berkala) agar tim HR dapat mendeteksi tren attrition secara dini, bukan hanya evaluasi retrospektif.
-6. **Kombinasikan analisis ini dengan data kualitatif** (exit interview, survei engagement) agar rekomendasi lebih holistik dan tidak hanya berbasis angka.
+5. **Telusuri lebih lanjut disparitas attrition berdasarkan gender**, khususnya proporsi attrition pria yang lebih tinggi (63,3%), untuk memastikan tidak ada isu struktural terkait beban kerja atau lingkungan kerja tertentu.
+6. **Bangun sistem monitoring attrition berkelanjutan** (dashboard live/berkala) agar tim HR dapat mendeteksi tren attrition secara dini, bukan hanya evaluasi retrospektif.
+7. **Kombinasikan analisis ini dengan data kualitatif** (exit interview, survei engagement) agar rekomendasi lebih holistik dan tidak hanya berbasis angka.
 
 ---
 
@@ -159,7 +165,7 @@ Dashboard ini berhasil mengubah data HR mentah menjadi **narasi bisnis yang jela
 hr-attrition-analytics-dashboard/
 │
 ├── HR Data.xlsx                          # Dataset mentah karyawan (sumber data)
-├── Overview HR Analytis Dashboard.png    # Screenshot preview dashboard
+├── Overview HR Analytics Dashboard.png   # Screenshot preview dashboard
 └── README.md                             # Dokumentasi proyek
 ```
 
@@ -173,8 +179,8 @@ hr-attrition-analytics-dashboard/
 
 Pastikan Anda telah menginstal salah satu aplikasi berikut:
 
-* Tableau Desktop
-* Tableau Reader
+- Tableau Desktop
+- Tableau Reader
 
 ---
 
@@ -204,24 +210,23 @@ Kemudian buka file **Overview HR Attrition Dashboard.twbx** menggunakan **Tablea
 
 Repository ini telah menyediakan dataset **HR Data.xlsx** yang digunakan sebagai sumber data dashboard.
 
-* Saat membuka file **Overview HR Attrition Dashboard.twbx**, Tableau akan secara otomatis menggunakan dataset tersebut apabila berada pada lokasi yang sama dengan workbook.
-* Jika Tableau meminta untuk memperbarui lokasi data (*Locate Data Source*), arahkan ke file **HR Data.xlsx** yang tersedia di dalam repository.
+- Saat membuka file **Overview HR Attrition Dashboard.twbx**, Tableau akan secara otomatis menggunakan dataset tersebut apabila berada pada lokasi yang sama dengan workbook.
+- Jika Tableau meminta untuk memperbarui lokasi data (*Locate Data Source*), arahkan ke file **HR Data.xlsx** yang tersedia di dalam repository.
 
 ---
 
 ### Cara Menggunakan Dashboard
 
-* Gunakan filter **Education** di pojok kanan atas untuk memfilter data.
-* Klik pada visualisasi seperti **Age Group**, **Department**, atau **Job Role** untuk melakukan eksplorasi interaktif (*cross-filtering*).
-* Arahkan kursor ke setiap chart untuk melihat informasi detail (*tooltip*).
+- Gunakan filter **Education** di pojok kanan atas untuk memfilter data.
+- Klik pada visualisasi seperti **Age Group**, **Department**, atau **Job Role** untuk melakukan eksplorasi interaktif (*cross-filtering*).
+- Gunakan parameter **Bin Size** pada histogram usia untuk mengubah lebar interval kelompok umur.
+- Arahkan kursor ke setiap chart untuk melihat informasi detail (*tooltip*).
 
 ---
 
 ### Preview Dashboard
 
 Apabila Anda belum memiliki Tableau Desktop atau Tableau Reader, Anda tetap dapat melihat tampilan dashboard melalui file **Overview HR Analytics Dashboard.png** yang tersedia pada repository ini.
-
-
 
 ---
 
@@ -238,8 +243,8 @@ Apabila Anda belum memiliki Tableau Desktop atau Tableau Reader, Anda tetap dapa
 Informatics Graduate — Universitas Muhammadiyah Malang *(Cumlaude, Best Graduate)*
 Fokus: Data Analytics · Business Intelligence · AI Automation
 
-🌐 Portfolio &nbsp;: [alfitranurr.vercel.app](https://alfitranurr.vercel.app)
-💻 GitHub &nbsp;&nbsp;&nbsp;: [github.com/alfitranurr](https://github.com/alfitranurr)
+🌐 Portfolio : [alfitranurr.vercel.app](https://alfitranurr.vercel.app)
+💻 GitHub&nbsp;&nbsp;&nbsp;: [github.com/alfitranurr](https://github.com/alfitranurr)
 📂 Dashboard : [Lihat via Google Drive](https://drive.google.com/file/d/1cvnXotn8kToo_7JJ5LJUTDRNC8lfoeNy/view?usp=sharing)
 
 </td>
